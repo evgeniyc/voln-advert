@@ -38,27 +38,50 @@ nav ul li
 	display: inline-block;
 	list-style: none;
 	float: right;
+	
+}
+nav a
+{
 	margin: 5px;
 	padding: 3px 10px;
 	border: 2px ridge black;
 	border-radius: 5px;
 	box-shadow: 0 0 2px black;
 	background: linear-gradient(to top, #48036f, white);
-}
-nav a
-{
 	color: white;
+	
 }
 nav a:hover
 {
 	color: red;
+	background: linear-gradient(to bottom, #48036f, white);
 	text-decoration: none;
-	font-weight: bold;
+	border-style: groove;
+}
+#side-menu
+{
+	padding-top: 0;
 }
 section
 {
 	height: 500px;
 	overflow: visible;
+}
+#breadcrumbs
+{
+	position:relative;
+	top: -10px;
+	color: blue;
+	text-shadow: 0 0 1px black;
+	
+}
+#sort
+{
+	color: red;
+}
+#search
+{
+	float: right;
 }
 .panel
 {
@@ -73,15 +96,6 @@ section
 	box-shadow: 1px -1px 2px black;
 	float: left;
 	margin: 5px;
-}
-.advert_body:hover
-{
-	-webkit-transform: scale(1.2,1.2);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 550ms;
-    -moz-transform: scale(1.2,1.2);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 550ms;
 }
 .advert_head
 {

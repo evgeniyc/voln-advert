@@ -43,6 +43,7 @@
 		</nav>
 		<div class="clearfix"></div>
 		<section>
+			<div id="breadcrumbs">Главная>>Недвижимость>>Частный сектор</div>
 			<div class="row">
 				<div class="col-sm-3 col-xs-12">
 					<aside>
@@ -51,19 +52,19 @@
 								<h3 class="panel-title">Разделы:</h3>
 							</div>
 							<div class="panel-body">
-								<ul>
-									<li>Lorem ipsum dolor sit amet</li>
-									<li>Consectetur adipiscing elit</li>
-									<li>Vestibulum quam eros</li>
-									<li>Sollicitudin in vestibulum</li> 
-									<li>Posuere ac mauris</li>
-									<li>Etiam ornare auctor rutrum</li> 
-									<li>Praesent sagittis sollicitudin nunc</li>
-									<li>Nulla rutrum eros vel sagittis porttitor</li>
-									<li>Etiam quis volutpat ante</li> 
-									<li>Nam ut magna quis tortor lacinia efficitur</li>
-									<li>Nam at fringilla nunc, et gravida augue</li> 
-									<li>Aenean blandit vel quam non vulputate</li> 
+								<ul id="side-menu">
+									<li><a href="#">Недвижимость</a></li>
+									<li><a href="#">Электроника</a></li>
+									<li><a href="#">Техника</a></li>
+									<li><a href="#">Общие объявления</a></li> 
+									<li><a href="#">Организационные</a></li>
+									<li><a href="#">Реклама</a></li> 
+									<li><a href="#">События</a></li>
+									<li><a href="#">Общая информация</a></li>
+									<li><a href="#">Галерея</a></li> 
+									<li><a href="#">Nam ut magna quis tortor lacinia efficitur</a></li>
+									<li><a href="#">Nam at fringilla nunc, et gravida augue</a></li> 
+									<li><a href="#">Aenean blandit vel quam non vulputate</a></li> 
 								</ul>
 							</div>
 						</div>
@@ -73,17 +74,25 @@
 					<article>
 						<div class="panel panel-primary">
 							<div class="panel-heading">
-								<h3 class="panel-title">Содержание:</h3>
+								<h3 class="panel-title">
+									Содержание:
+									<form id="search" name="search"><input type="text" size=25><input type="submit" value="Поиск"></form>
+								</h3>
 							</div>
 							<div class="panel-body">
+								<div id="sort">Сортировка по: | цене | названию | дате</div>
 								<?php 
 								$j=0;
 								for($i=0; $i<25; $i++): $j++;?>
-									<a href="#"><div class="advert">
-										<div class="advert_head">Продам дом в Вольнянске</div>
-										<div class="advert_body"><img src="img/houses/<?php echo $j.'.jpg'; ?>" width="100%" height="100%"></div>
-										<div class="advert_footer">Цена: $20000</div>
-									</div></a>
+									<a href="#">
+										<div class="advert">
+											<div class="advert_head">Продам дом в Вольнянске</div>
+											<div class="advert_body"><img src="img/houses/<?php echo $j.'.jpg'; ?>" width="100%" height="100%"></div>
+											<div class="advert_footer">
+											<div class="advert-price">Цена: $20000</div>
+											</div>
+										</div>
+									</a>
 								<?php if($j==10) 
 										$j=0;
 								endfor; ?>
